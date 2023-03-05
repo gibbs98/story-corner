@@ -1,8 +1,11 @@
 body {
     background-color: white;
     color:rgb(85, 82, 82);
-    padding: 25px;
+    padding:0px;
+    margin:0px;
     font-family: 'Optima';
+    margin-top:-33px; /*is there a better way of doing this? without it, the header appears slightly
+    lower than the top of the page*/
   }
 
 header{
@@ -10,17 +13,26 @@ header{
     height:100px;  
     opacity: 1;
 }
+
+#header-background{
+    width:100%;
+    height:250px;
+    background-image:url(/pastelclouds.jpeg);
+} /*THIS IS NEW!!!!!!!!!!*/
+
 header h1{
     text-align: left;
-    padding: 10px;
+    padding: 35px;
     font-size:50px;
 }
 .searchbar {
     position: absolute;
-    top: 100px;
+    top: 57px;
     margin-left: 800px;
-    /*need to centre align this instead of margin*/
+
 }
+    /*need to centre align this instead of margin*/
+
 nav{
     color:rgb(85, 82, 82);
     font-size: 25px;
