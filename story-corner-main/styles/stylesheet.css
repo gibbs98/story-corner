@@ -1,90 +1,161 @@
 body {
     background-color: white;
-    color: rgb(85, 82, 82);
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Optima';
-    margin-top: -33px;
-    /*is there a better way of doing this? without it, the header appears slightly
-    lower than the top of the page*/
+    color:rgb(85, 82, 82);
+    padding:0px;
+    margin:0px;
+    font-family: 'monaco' monospace;
+    margin: 0;
+   padding: 0;
+  }
+
+header{
+    color:rgb(85, 82, 82);
+    height:80px;  
+    /*position: fixed; /*NAV BAR DISAPPEARS WITH THIS? CAN ANYONE MAKE THIS WORK? */
+    /*opacity: 1; REMOVED CLOUD IMAGE SO NOT NEEDED*/
+    background-color: rgb(236, 239, 130);
 }
 
-header {
-    color: rgb(85, 82, 82);
-    height: 100px;
-    opacity: 1;
-}
+#header-background{
+    width:100%;
+    height:200px; /*UPDATED*/
+    /*background-image:url(/pastelclouds.jpeg);REMOVED CLOUD IMAGE*/  
+} 
 
-#header-background {
-    width: 100%;
-    height: 250px;
-    background-image: url(/pastelclouds.jpeg);
-}
-
-/*THIS IS NEW!!!!!!!!!!*/
-
-header h1 {
+header h1{
     text-align: left;
-    padding: 35px;
-    font-size: 50px;
+    padding: 30px;
+    font-size:50px;
 }
-
-.searchbar {
-    position: absolute;
-    top: 57px;
-    margin-left: 800px;
-
+.container-fluid {
+    position: relative;
+    max-width: 400px; 
+    float:right;
+    margin-top: -75px; /*NEW IS THERE A BETTER WAY OF DOING THIS? TO GET IT THE CORRECT DISTANCE
+    FROM THE TOP */
 }
-
-/*need to centre align this instead of margin*/
 
 nav {
-    color: rgb(85, 82, 82);
+    color:rgb(85, 82, 82);
     font-size: 25px;
-    width: 2500px;
-    /*width of nav bar*/
+    width:2500px; /*width of nav bar*/
+    margin:-130px -40px; /*NEW to move it closer to the h1*/
+    padding:10px;
 }
-
-nav ul {
-    list-style: none;
-    clear: both;
+nav ul{
+    list-style:none;
+    clear:both;
     padding: 10px;
 }
-
-nav ul li {
-    display: inline-block;
-    /*display links in a line */
-    border-right: 2px solid rgb(85, 82, 82);
-    ;
-    /*nav bar lines*/
-    color: rgb(85, 82, 82);
-}
+nav ul li{
+    display:inline-block; /*display links in a line */
+    border-right: 2px solid rgb(85, 82, 82);; /*nav bar lines*/
+    color:rgb(85, 82, 82);
+    }
 
 nav ul li:last-child {
-    border-right: 0;
-    /*nav bar lines*/
-}
+        border-right:0; /*nav bar lines*/
+    } 
 
-nav ul li a {
-    padding: 50px 80px;
-    /*make these less spread out?*/
+nav ul li a{
+    padding: 50px 60px; /* NEW -UPDATED */
     text-decoration: none;
 }
 
-nav ul li a:visited {
-    color: rgb(123, 183, 175);
+nav ul li a:visited{
+    color:rgb(71, 161, 149);
 }
 
-nav ul li a:hover {
-    color: pink;
-    /*hover over link*/
-}
+nav ul li a:hover{
+    color: rgb(30, 137, 119); /*hover over link*/
+} 
 
-.info {
+
+/*updated to fit well with image*/
+.info{
     border: black;
     border-style: solid;
-    margin: 150px;
-    padding: 100px;
+    margin:130px 10px 60px 60px;
+    padding:70px;
     text-align: left;
-    width: 500px;
+    width:800px;
+    float:left;
 }
+
+
+/*image flips when you hover over it */
+img:hover {
+    transform: scaleX(-1);
+  }
+
+/*position of image on index page*/
+.indeximage{
+    position: flex;
+    float:right;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    margin: 90px 0px;
+}
+
+
+/* new - stop products on index page from floating into info*/
+.products{
+    clear:both;
+    margin:300px;
+}
+
+.products li{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+footer{
+    color:rgb(85, 82, 82);
+    height:130px;  
+    opacity: 1;
+    background-color: rgb(236, 239, 130);
+    padding:30px;
+    font-size:20px;
+    position: absolute;/*stretches it across the bottom of the page*/
+    left: 0px; /*stretches it across the bottom of the page*/
+    right: 0px;/*stretches it across the bottom of the page*/
+    width:100%;/*stretches it across the bottom of the page*/
+}
+
+
+
+/*NEW. THIS IS FOR THE ABOUT ME PAGE */
+.aboutus{
+    border: black;
+    border-style: solid;
+    margin:200px;
+    padding:100px;
+    text-align: center;
+    width:500px;
+}
+
+/*NEW. THIS IS FOR THE ABOUT ME PAGE */
+.authorcontact{
+    border: black;
+    border-style: solid;
+    margin:200px;
+    padding:100px;
+    text-align: center;
+    width:500px;
+}
+
+/*about me page CSS- text and image */
+.aboutus {
+    display: flex;
+}
+
+.aboutustext {
+    flex: 1;
+}  
+
+.aboutusimage {
+    margin-right: 20px;
+    padding:50px;
+} 
