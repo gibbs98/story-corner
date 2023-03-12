@@ -245,10 +245,7 @@
         { id: 4, price: 12.0 },
       ];
 
-      document.addEventListener("DOMContentLoaded", () => {});
-
       const addToBasket = (bookId) => {
-        const bookInArr = books.filter((book) => book.id === bookId);
         basket.push(books.filter((book) => book.id === bookId)[0]);
         updateBasketText();
       };
@@ -260,11 +257,10 @@
 
       const updateBasketText = () => {
         if (basket.length === 0) {
-          document.getElementById("basket-total").innerHTML = '🛒'
+          document.getElementById("basket-total").innerHTML = "🛒";
+        } else {
+          document.getElementById("basket-total").innerHTML = basket.length;
         }
-       else {
-        document.getElementById("basket-total").innerHTML = basket.length;
-       }
       };
     </script>
   </body>
