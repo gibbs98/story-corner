@@ -1,45 +1,271 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Story Corner</title>
-    <link rel="stylesheet" href="/styles/stylesheet.css" />
-    <link rel="stylesheet" href="/styles/shopstyle.css" />
-</head>
-<body>
-    <header>
-        <h1>The Story Corner</h1>
-            <div class="searchbar">
-                <input type="text" placeholder="Search..">
-            </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="#">Our Author of the Week</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/shop-style.css" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <header id="header-background">
+      <h1>The Story Corner</h1>
+      <!-- <nav class="navbar bg-body-tertiary"> -->
+      <div class="container-fluid in">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-info" type="button">Search</button>
+        </form>
+      </div>
     </header>
-    <main>
-        <section class="info">
-            <h2>Welcome to The Story Corner</h2>
-            <p>Grow your child's mind with our hand-selected, high quality books. Each of our books has been carefully
-                selected to give an insight into the lives of children around the world.</p>
-        </section>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="./shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="#">Our Author of the Week</a>
+        </li>
+        <li>
+          <a href="./contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Section-->
+    <section class="py-5 mt-5">
+      <div class="container px-4 px-lg-5 mt-5">
         <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="https://picsum.photos/200/300" alt="Avatar" style="width:100%" />
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p>
+          <div class="col-md-9"></div>
+          <div class="col-md-3">
+            <div
+              style="float: right"
+              class="btn-group"
+              role="group"
+              aria-label="Basic mixed styles example"
+            >
+              <button type="button" class="btn btn-success" id="basket-total">
+                🛒
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                id="empty-basket"
+                onclick="clearBasket()"
+              >
+                🗑️
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div
+          id="catalog"
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="./images/lookup.jpeg"
+                alt="..."
+                width="auto"
+                height="300px"
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Look Up</h5>
+                  <!-- Product price-->£10.00
                 </div>
               </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <button
+                    class="btn btn-primary mt-auto add-to-basket"
+                    onclick="addToBasket(1)"
+                  >
+                    Add to Basket
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="./images/allarewelcome.jpeg"
+                alt="..."
+                width="auto"
+                height="300px"
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">All Are Welcome</h5>
+                  <!-- Product price-->£12.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <button
+                    class="btn btn-primary mt-auto add-to-basket"
+                    onclick="addToBasket(2)"
+                  >
+                    Add to Basket
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="./images/readysteadyrace.jpeg"
+                alt="..."
+                width="auto"
+                height="300px"
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Ready Steady Race</h5>
+                  <!-- Product price-->£8.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <button
+                    class="btn btn-primary mt-auto add-to-basket"
+                    onclick="addToBasket(3)"
+                  >
+                    Add to Basket
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="./images/AllAboardtheColoursTrain.jpg"
+                alt="..."
+                width="auto"
+                height="300px"
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">All Aboard the Colours Train</h5>
+                  <!-- Product price-->£6.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <button
+                    class="btn btn-primary mt-auto add-to-basket"
+                    onclick="addToBasket(4)"
+                  >
+                    Add to Basket
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
+    <!-- Footer-->
     <footer>
-        <p>The Story Corner</p>
+      <p>The Story Corner</p>
+      <a href="#">
+        <img
+          src="./images/facebooklogo.png"
+          alt="facebook"
+          style="width: 42px; height: 42px"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="./images/instagramlogo.svg"
+          alt="instagram"
+          style="width: 42px; height: 42px"
+        />
+      </a>
     </footer>
-</body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+      let basket = [];
+      let books = [
+        { id: 1, price: 10.0 },
+        { id: 2, price: 8.0 },
+        { id: 3, price: 11.0 },
+        { id: 4, price: 12.0 },
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {});
+
+      const addToBasket = (bookId) => {
+        const bookInArr = books.filter((book) => book.id === bookId);
+        basket.push(books.filter((book) => book.id === bookId)[0]);
+        updateBasketText();
+      };
+
+      const clearBasket = () => {
+        basket = [];
+        updateBasketText();
+      };
+
+      const updateBasketText = () => {
+        if (basket.length === 0) {
+          document.getElementById("basket-total").innerHTML = '🛒'
+        }
+       else {
+        document.getElementById("basket-total").innerHTML = basket.length;
+       }
+      };
+    </script>
+  </body>
 </html>

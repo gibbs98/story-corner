@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stylesheet.css" rel="stylesheet">
-    <!--NEW - link for Bootstrap - keep in head -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <title>The Story Corner</title>
-    <!--THIS IS NOT NEEDED <link rel="stylesheet" href="style.css" -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>The Story Corner</title>
+  <link rel="stylesheet" href="./styles/stylesheet.css" />
   <script src="script.js"></script>
 </head>
 <body>
-    <div class="inline">
     <header id="header-background">
         <h1>The Story Corner</h1>
-            <!-- <nav class="navbar bg-body-tertiary"> -->
-            <div class="container-fluid">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>     
-    </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Our Author of the Week</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="info">
-            <h2>Welcome to The Story Corner</h2>
-            <p>Grow your child's mind with our hand-selected, high quality books. Each of our books has been carefully 
-                selected to give an insight into the lives of children around the world.</p>
-            <a href="#" class="btn">Shop Now</a>
-        </section>
-        <div style="max-width:1000px max-height=500">
-        <section class="indeximage">
-            <img src="family3reading.webp" width="1000" height="500">
-        </section>
+        <div class="container-fluid in">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info" type="button">Search</button>
+          </form>
         </div>
-        <section class="products">
-            <h2>Featured Products</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="lookup.jpeg" alt="Look up" width="350" height="400">
-                        <h3>Look up</h3>
-                        <p>£5</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="readysteadyrace.jpeg" alt="Ready steady race" width="350" height="400">
-                        <h3>Ready Steady Race</h3>
-                        <p>£4</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="allarewelcome.jpeg" alt="All are Welcome" width="350" height="400">
-                        <h3>All are Welcome</h3>
-                        <p>£6</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>The Story Corner</p>
-        <a href="#"><img src="facebooklogo.png" alt="facebook" style="width:42px;height:42px;"></a>
-        <a href="#"><img src="instagramlogo.svg" alt="instagram" style="width:42px;height:42px;"></a>
-    </footer>
-<!--NEW - link for Bootstrap - keep at bottom of body-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="./shop.html">Shop</a>
+          </li>
+          <li>
+            <a href="#">Our Author of the Week</a>
+          </li>
+          <li>
+            <a href="./contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+  <main>
+    <section class="py-5 mt-5">
+        <div class="container px-4 px-lg-5 mt-5">
+          <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3">
+              <div style="float: right" class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-success" id="basket-total">🛒(5)</button>
+                <button type="button" class="btn btn-danger" id="empty-basket">🗑️</button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div id="catalog" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+        </div>
+      </section>
+    <section class="info">
+      <h2>Welcome to The Story Corner</h2>
+      <p>Grow your child's mind with our hand-selected, high quality books. Each of our books has been carefully selected to give an insight into the lives of children around the world.</p>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </section>
+    <div style="max-width:1000px max-height=500">
+      <section class="indeximage">
+        <img src="./images/family3reading.webp" width="1000" height="500">
+      </section>
+    </div>
+    <!-- <section class="products">
+      <h2>Featured Products</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./images/lookup.jpeg" alt="Look up" width="300" height="350">
+            <h3>Look up</h3>
+            <p>£5</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/readysteadyrace.jpeg" alt="Ready steady race" width="300" height="350">
+            <h3>Ready Steady Race</h3>
+            <p>£4</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/allarewelcome.jpeg" alt="All are Welcome" width="300" height="350">
+            <h3>All are Welcome</h3>
+            <p>£6</p>
+          </a>
+        </li>
+      </ul>
+    </section> -->
+  </main>
+  <footer>
+    <p>The Story Corner</p>
+    <a href="#">
+      <img src="./images/facebooklogo.png" alt="facebook" style="width:42px;height:42px;">
+    </a>
+    <a href="#">
+      <img src="./images/instagramlogo.svg" alt="instagram" style="width:42px;height:42px;">
+    </a>
+  </footer>
+  <!--NEW - link for Bootstrap - keep at bottom of body-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

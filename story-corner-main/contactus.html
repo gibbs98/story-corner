@@ -2,27 +2,40 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stylesheet.css" rel="stylesheet">
+    <link href="./styles/stylesheet.css" rel="stylesheet">
     <title>The Story Corner</title>
-    <link rel="stylesheet" href="/styles.css/stylesheet.css">
   <script src="script.js"></script>
  </head>
   <body>
-    <header>
+    <header id="header-background">
         <h1>The Story Corner</h1>
-            <div class="searchbar">
-                <input type="text" placeholder="Search..">
-            </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="#">Our Author of the Week</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- <nav class="navbar bg-body-tertiary"> -->
+        <div class="container-fluid in">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info" type="button">Search</button>
+          </form>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="./shop.html">Shop</a>
+          </li>
+          <li>
+            <a href="#">Our Author of the Week</a>
+          </li>
+          <li>
+            <a href="./contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
     <section class="form">
         <p>We'd love to hear from you - call us on 555 4321 or send us a message below </p>
         <p>How can we help today?</p>
