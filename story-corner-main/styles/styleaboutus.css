@@ -155,8 +155,9 @@ footer{
     width:800px;
     height:600px;
     margin-top:-450px; /*better way of doing this?*/
+    margin-right: 50px;
+    float:right;
 }
-
 /*about me page CSS- text and image */
 
 .aboutustext{
