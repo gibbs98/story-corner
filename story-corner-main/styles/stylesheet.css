@@ -111,7 +111,6 @@ img:hover {
     padding: 20px;
 }
 
-
 footer{
     color:rgb(85, 82, 82);
     height:130px;  
@@ -126,37 +125,3 @@ footer{
 }
 
 
-
-/*NEW. THIS IS FOR THE ABOUT ME PAGE */
-.aboutus{
-    border: black;
-    border-style: solid;
-    margin:200px;
-    padding:100px;
-    text-align: center;
-    width:500px;
-}
-
-/*NEW. THIS IS FOR THE ABOUT ME PAGE */
-.authorcontact{
-    border: black;
-    border-style: solid;
-    margin:200px;
-    padding:100px;
-    text-align: center;
-    width:500px;
-}
-
-/*about me page CSS- text and image */
-.aboutus {
-    display: flex;
-}
-
-.aboutustext {
-    flex: 1;
-}  
-
-.aboutusimage {
-    margin-right: 20px;
-    padding:50px;
-} 
