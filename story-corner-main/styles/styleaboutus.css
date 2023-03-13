@@ -94,14 +94,14 @@ footer{
     left: 0%; /*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     right: 0%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     width:100%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
-    bottom:-100%;  /*13.03.23 CHANGED THIS TO A %*/
+    bottom:-120%;  /*13.03.23 CHANGED THIS TO A %*/
   }
 
 
 /*NEW. THIS IS FOR THE ABOUT ME PAGE */
 .aboutus{
-    margin:0% 5% 50% 4%;  /*13.03.23 CHANGED THIS TO A %*/
-    padding:10px;
+    margin:0% 5% 50% 4%;
+    padding:20px;
     text-align: left;
     display: flex;
 }
@@ -112,8 +112,8 @@ footer{
     border-style: solid;
     padding:100px;
     text-align: center;
-    width:800px;
-    height:600px;
+    width:600px;
+    height:700px;
     margin: -28% 10% 0% 0%;  /*13.03.23 CHANGED THIS TO A %*/
     float:right;
 }
@@ -124,7 +124,7 @@ footer{
     border: black;
     border-style: solid;
     width: 900px;
-    height:350px;
+    height:500px;
 }  
 
 .aboutusimage {
