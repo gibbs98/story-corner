@@ -2,7 +2,8 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/stylesheet.css" rel="stylesheet">
+    <link href="./styles/stylecontactus.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>The Story Corner</title>
   <script src="script.js"></script>
  </head>
@@ -36,19 +37,26 @@
           </li>
         </ul>
       </nav>
-    <section class="form">
-        <p>We'd love to hear from you - call us on 555 4321 or send us a message below </p>
-        <p>How can we help today?</p>
-         <form action="/submit">
-           <label for="new order"><input id="newOrder" type="checkbox"
-              name="contact" value="delivery">delivery</label>
+    <section class="contact-us form">
+      <div style="max-width:1000px max-height=500">
+        <section class="top-image">
+          <img src="./images/contact us image.png">
+          <div class="contact-card">
+            <p>We'd love to hear from you - call us on 555 4321 or send us a message below </p>
+            <p>How can we help today?</p>
+            <form action="/submit">
+              <label for="new order"><input id="newOrder" type="checkbox"
+                name="contact" value="delivery">Delivery</label>
               <label for="returns"><input id="returns" type="checkbox" name="contact"
-           value="returns">returns</label>
-           <label for="other"> <input id="other" type="checkbox" name="contact"
-           value="other">other</label>
-           <input type="text" placeholder="Add details here">
-          <button type="submit">submit message</button>
-          </form>
+                value="returns">Returns</label>
+              <label for="other"> <input id="other" type="checkbox" name="contact"
+                value="other">Other</label>
+              <div class="submit-button">
+                <input type="text" placeholder="Add details here">
+                <button type="submit">Submit </button>
+              </div>
+            </form>
+      
     </section>
 </body>
 </html>
