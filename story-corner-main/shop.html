@@ -283,8 +283,9 @@
       };
 
       const clearBasket = () => {
-        toastr.error(`Removed ${basket.length} items from your basket`);
+        const basketTotal = basket.length;
         basket = [];
+        toastr.error(`Removed ${basketTotal} items from your basket`);
         updateBasketText();
       };
 
