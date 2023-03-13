@@ -1,0 +1,169 @@
+header {
+  color:#e9f5f9;
+  height: 80px;  
+  background: rgb(58,192,235);
+  background: linear-gradient(0deg, rgba(58,192,235,1) 0%, rgba(45,102,253,1) 100%);
+}
+
+#header-background{
+    height: 200px;
+}
+
+header h1{
+  color: white;
+  text-align: left;
+  padding: 30px;
+  font-size: 50px;
+}
+
+.container-fluid {
+  position: relative;
+  max-width: 400px;
+  float: right;
+  margin-top: -75px;
+  /*NEW IS THERE A BETTER WAY OF DOING THIS? TO GET IT THE CORRECT DISTANCE
+  FROM THE TOP */
+}
+body {
+  background-color: E8E8E8;
+  font-family: 'Assistant', sans-serif;
+}
+
+
+nav {
+  color: rgb(85, 82, 82);
+  font-size: 25px;
+  width: 2500px;
+  /*width of nav bar*/
+  margin: -130px -40px;
+  /*NEW to move it closer to the h1*/
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  clear: both;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  /*display links in a line */
+  border-right: 2px solid #e9f5f9;
+  /*nav bar lines*/
+  color: #e9f5f9;
+}
+
+nav ul li:last-child {
+  border-right: 0;
+  /*nav bar lines*/
+}
+
+nav ul li a {
+  color: #e9f5f9;
+  /*updated colour of the links*/
+  padding: 50px 60px;
+  /* NEW -UPDATED */
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #bee0ec;
+}
+
+nav ul li a:hover {
+  color: #bee0ec;
+  /*hover over link*/
+}
+
+/*image flips when you hover over it */
+img:hover {
+  transform: scaleX(-1);
+}
+
+
+footer{
+  color:#e9f5f9;
+  margin:10px;
+  height:130px;  
+  opacity: 1;
+  background: rgb(58,192,235);
+  background: linear-gradient(0deg, rgba(58,192,235,1) 0%, rgba(45,102,253,1) 100%);
+  padding:30px;
+  font-size:20px;
+  position: absolute;/*stretches it across the bottom of the page*/
+  left: -10px; /*stretches it across the bottom of the page*/
+  right: 0px;/*stretches it across the bottom of the page*/
+  width:100%;/*stretches it across the bottom of the page*/
+  bottom:-820px;
+}
+
+
+/*NEW. THIS IS FOR THE ABOUT ME PAGE */
+.aboutus{
+  margin:0px 10px 50px 50px;
+  padding:10px;
+  text-align: left;
+  display: flex;
+}
+
+/*NEW. THIS IS FOR THE ABOUT ME PAGE */
+.authorcontact{
+  border: black;
+  border-style: solid;
+  padding:100px;
+  text-align: center;
+  width:800px;
+  height:600px;
+  margin-top:-450px; /*better way of doing this?*/
+  margin-right: 50px;
+  float:right;
+}
+/*about me page CSS- text and image */
+
+.aboutustext{
+  padding:70px;
+  border: black;
+  border-style: solid;
+  width: 900px;
+  height:350px;
+}  
+
+.aboutusimage {
+  margin-right: 20px;
+  padding:30px;
+  
+} 
+
+.aboutusimage2 {
+  margin-left: 50px;
+  margin-top:-130px;
+  padding:30px;
+  
+} 
+
+.contact-us{
+  margin: 118px 0;
+}
+
+.top-image img {
+  width: 100%;
+  aspect-ratio: 35/9;
+}
+
+.contact-card {
+  max-width: 500px;
+  font-family: monospace;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+.contact-card form {
+  display: inline-grid;
+}
+
+.submit-button {
+  margin-top: 10px;
+}
