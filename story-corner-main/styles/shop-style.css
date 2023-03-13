@@ -51,25 +51,6 @@ nav ul li a:hover{
     color: #bee0ec;
    /*hover over link*/
 }
-footer{
-    color:rgb(85, 82, 82);
-    height:130px;
-    opacity: 1;
-    background-color: rgb(236, 239, 130);
-    padding:30px;
-    font-size:20px;
-    position: absolute;
-   /*stretches it across the bottom of the page*/
-    left: 0px;
-   /*stretches it across the bottom of the page*/
-    right: 0px;
-   /*stretches it across the bottom of the page*/
-    width:100%;
-   /*stretches it across the bottom of the page*/
-}
-
-  /*background-image:url(/pastelclouds.jpeg);REMOVED CLOUD IMAGE*/  
-} 
 
 header h1{
   text-align: left;
