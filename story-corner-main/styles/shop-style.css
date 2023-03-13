@@ -97,9 +97,10 @@ nav ul li a:visited{
   color:#bee0ec;
 }
 
-nav ul li a:hover{
-  color: #bee0ec; /*hover over link*/
-} 
+nav ul li a:hover {
+  color: black;
+  /*hover over link*/
+}
 
 footer{
   color:#e9f5f9;
