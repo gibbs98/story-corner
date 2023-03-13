@@ -71,7 +71,7 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    color: #bee0ec;
+    color: black;
     /*hover over link*/
 }
 
@@ -94,7 +94,7 @@ footer{
     left: 0%; /*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     right: 0%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     width:100%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
-    bottom:-70%;  /*13.03.23 CHANGED THIS TO A %*/
+    bottom:-100%;  /*13.03.23 CHANGED THIS TO A %*/
   }
 
 

@@ -80,27 +80,22 @@ nav ul li a:hover {
 .info {
     border: black;
     border-style: solid;
-    margin: 0% 0% 0% 5%;  /*13.03.23 CHANGED THIS TO A %*/
-    padding: 70px;
+    margin: 5% 5%;
+    padding: 50px;
     text-align: left;
-    width: 800px;
-    /* removed as not needed due to % update float: left; */
+    width: 550px;
 }
 
-
-/*image flips when you hover over it */
 .indeximage:hover {
     transform: scaleX(-1);
 }
 
-/*position of image on index page*/
 .indeximage {
-    position: flex;
+    position: absolute;
     float: right;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    margin: -15% 0% 0% 20%;  /*13.03.23 CHANGED THIS TO A %*/
+    margin: -30% 0% 0% 40%;
+    height: 500px;
+    
 }
 
 footer{
@@ -116,6 +111,6 @@ footer{
     left: -1%; /*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     right: 100%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
     width:100%;/*stretches it across the bottom of the page*/  /*13.03.23 CHANGED THIS TO A %*/
-    bottom:0%;  /*13.03.23 CHANGED THIS TO A %*/
+    bottom:-20%;  /*13.03.23 CHANGED THIS TO A %*/
   }
 
