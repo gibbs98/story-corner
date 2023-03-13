@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>Story Corner</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -19,6 +19,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="./styles/shop-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
   </head>
   <body>
     <!-- Navigation-->
@@ -233,24 +237,53 @@
       </a>
     </footer>
     <!-- Bootstrap core JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
     <script>
+      toastr.options = {
+        closeButton: false,
+        debug: false,
+        newestOnTop: false,
+        progressBar: false,
+        positionClass: "toast-bottom-right",
+        preventDuplicates: false,
+        onclick: null,
+        showDuration: "300",
+        hideDuration: "1000",
+        timeOut: "5000",
+        extendedTimeOut: "1000",
+        showEasing: "swing",
+        hideEasing: "linear",
+        showMethod: "fadeIn",
+        hideMethod: "fadeOut",
+      };
       let basket = [];
       let books = [
-        { id: 1, price: 10.0 },
-        { id: 2, price: 8.0 },
-        { id: 3, price: 11.0 },
-        { id: 4, price: 12.0 },
+        { id: 1, price: 10.0, title: 'Look Up' },
+        { id: 2, price: 8.0, title: 'All Are Welcome'},
+        { id: 3, price: 11.0, title: 'Ready Steady Race' },
+        { id: 4, price: 12.0, title: 'All About the Colours Train' },
       ];
 
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("loaded");
+      });
+
       const addToBasket = (bookId) => {
+        const book = books.filter((book) => book.id === bookId)[0];
         basket.push(books.filter((book) => book.id === bookId)[0]);
+        toastr.success(`Added '${book.title}' to the basket`);
         updateBasketText();
       };
 
       const clearBasket = () => {
+        toastr.error(`Removed ${basket.length} items from your basket`);
         basket = [];
         updateBasketText();
       };
@@ -259,7 +292,7 @@
         if (basket.length === 0) {
           document.getElementById("basket-total").innerHTML = "🛒";
         } else {
-          document.getElementById("basket-total").innerHTML = basket.length;
+          document.getElementById("basket-total").innerHTML = `🛒 ${basket.length}`;
         }
       };
     </script>
